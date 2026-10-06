@@ -31,12 +31,6 @@ impl StructuredOutputServer {
         }
     }
 
-    /// Get server info (returns unstructured text)
-    #[tool(name = "get_info", description = "Get server information")]
-    pub async fn get_info(&self) -> String {
-        "Structured Output Example Server v1.0".to_string()
-    }
-
     /// Get weather information for a city (returns structured data)
     #[tool(name = "get_weather", description = "Get current weather for a city")]
     pub async fn get_weather(
@@ -73,7 +67,6 @@ async fn main() -> anyhow::Result<()> {
     eprintln!();
     eprintln!("Tools available:");
     eprintln!("- get_weather: Returns structured weather data");
-    eprintln!("- get_info: Returns plain text");
     eprintln!();
 
     let server = StructuredOutputServer::new();
@@ -92,8 +85,7 @@ async fn main() -> anyhow::Result<()> {
         }
     }
     eprintln!();
-
-    // Start the server
+    
     eprintln!("Starting server. Connect with an MCP client to test the tools.");
     eprintln!("Press Ctrl+C to stop.");
 

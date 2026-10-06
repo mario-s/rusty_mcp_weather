@@ -1,4 +1,4 @@
-# rust-mcp
+# rusty_mcp_weather
 MCP server to query weather information from [Openweathermap](https://openweathermap.org) written in Rust.
 
 It requires an API Key from Openweathermap.
