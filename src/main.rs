@@ -85,7 +85,7 @@ async fn main() -> anyhow::Result<()> {
         }
     }
     eprintln!();
-    
+
     eprintln!("Starting server. Connect with an MCP client to test the tools.");
     eprintln!("Press Ctrl+C to stop.");
 

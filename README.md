@@ -9,6 +9,6 @@ The communication with the server can be tested with the interactive [MCP Inspec
 To launch the inspector with the server execute npx:
 ```
 npx @modelcontextprotocol/inspector \
-  -e API_KEY=<YOUR_API_KEY \
+  -e API_KEY=<YOUR_API_KEY> \
   cargo run
 ```
